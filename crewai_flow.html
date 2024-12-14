@@ -162,8 +162,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#FF5A50", "fixed": true, "font": {"color": "#FFFFFF", "multi": "html"}, "id": "load_files_path", "label": "Load Files Path", "margin": {"bottom": 8, "left": 10, "right": 10, "top": 10}, "physics": false, "shape": "box", "x": 0.0, "y": 0}, {"color": "#333333", "fixed": true, "font": {"color": "#FFFFFF", "multi": "html"}, "id": "update_docs", "label": "Update Docs", "margin": {"bottom": 8, "left": 10, "right": 10, "top": 10}, "physics": false, "shape": "box", "x": 0.0, "y": 150}]);
-                  edges = new vis.DataSet([{"arrows": "to", "color": "#666666", "dashes": false, "from": "load_files_path", "smooth": false, "to": "update_docs", "width": 2}]);
+                  nodes = new vis.DataSet([{"color": "#FF5A50", "fixed": true, "font": {"color": "#FFFFFF", "multi": "html"}, "id": "clone_repo", "label": "Clone Repo", "margin": {"bottom": 8, "left": 10, "right": 10, "top": 10}, "physics": false, "shape": "box", "x": 0.0, "y": 0}, {"color": "#333333", "fixed": true, "font": {"color": "#FFFFFF", "multi": "html"}, "id": "plan_docs", "label": "Plan Docs", "margin": {"bottom": 8, "left": 10, "right": 10, "top": 10}, "physics": false, "shape": "box", "x": 0.0, "y": 150}, {"color": "#333333", "fixed": true, "font": {"color": "#FFFFFF", "multi": "html"}, "id": "create_docs", "label": "Create Docs", "margin": {"bottom": 8, "left": 10, "right": 10, "top": 10}, "physics": false, "shape": "box", "x": 0.0, "y": 300}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#666666", "dashes": false, "from": "clone_repo", "smooth": false, "to": "plan_docs", "width": 2}, {"arrows": "to", "color": "#666666", "dashes": false, "from": "plan_docs", "smooth": false, "to": "create_docs", "width": 2}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });

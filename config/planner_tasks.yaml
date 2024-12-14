@@ -1,0 +1,71 @@
+analyze_codebase:
+  description: >
+    Analyze the codebase at {repo_path} to create a developer-focused technical overview:
+
+    1. Map out the core architecture and components by examining file structure and imports
+    2. Identify key classes, functions and their interactions through static code analysis
+    3. Document APIs and interfaces with usage examples
+    4. Analyze and diagram data/control flows between components
+    5. Note implemented design patterns and their practical applications
+    6. Identify common usage patterns and integration points
+
+    Focus on details that would help another engineer understand and work with the codebase.
+  expected_output: >
+    A technical analysis containing:
+    - Project overview explaining the system architecture and key design decisions
+    - List of code components with:
+      - Name and location in codebase
+      - Type (class/function/module)
+      - Purpose and responsibilities
+      - Key methods and interfaces
+      - Integration points with other components
+    - API documentation with:
+      - Method signatures and parameters
+      - Usage examples and common patterns
+      - Integration guidelines
+    - Component interaction diagrams
+    - Implementation patterns and their use cases
+
+create_documentation_plan:
+  description: >
+    Using the codebase analysis, develop engineering-focused documentation for {repo_path}:
+
+    1. Create a comprehensive overview document covering:
+       - System architecture and key design decisions
+       - Core workflows and data flows
+       - High-level component interactions
+       - Getting started guide
+
+    2. Identify and document critical components based on:
+       - Usage frequency in the codebase
+       - Integration complexity
+       - Business logic importance
+       - Developer learning curve
+
+    3. Prioritize additional documentation sections:
+       - Core DSL/APIs and interfaces
+       - Common integration patterns
+       - Advanced usage scenarios
+       - Extension points and customization
+       - Edge cases and troubleshooting
+
+    Focus on creating a clear learning path from overview to advanced topics.
+
+  expected_output: >
+    A documentation plan containing:
+    - Overview: Comprehensive introduction document covering:
+      - Architecture overview
+      - Key workflows
+      - Component relationships
+      - Setup guide
+
+    - Components: List of CodeComponent objects ordered by priority:
+      - name: Component identifier
+      - usage: Common use cases and examples
+      - integration: How to interact with other components
+
+    - Docs: List of DocItem objects following learning progression (one doc item should be an introduction/overview):
+      - title: Documentation section name
+      - description: Technical concepts to cover
+      - prerequisites: Required knowledge/components
+      - examples: Key code samples to include

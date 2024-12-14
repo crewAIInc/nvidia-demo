@@ -1,0 +1,87 @@
+draft_documentation:
+  description:
+    Write a documentation for "{title}", for the codebase at {repo_path}.
+    The main goal is {goal}
+
+    Using only verified information from the codebase analysis
+
+    - Project overview
+    {overview}
+
+    - Documentation will include mention of these components
+    {components}
+
+    - This is the high level documentation description
+    {description}
+
+    - Prerequisites
+    {prerequisites}
+
+    - Examples
+    {examples}
+
+    Note - Use ASCII art diagrams instead of images to represent flows and relationships.
+
+  expected_output: >
+    A factual Markdown documentation that includes only verified information about {title}
+    that is relevant to the codebase at {repo_path} and a goal of {goal}
+
+    Mention some of the main components relevant to the this documentation: {components}
+
+    Use ASCII art diagrams to visualize component relationships and flows.
+
+    The documentation must include only:
+    1. Section headers matching actual code structure
+    2. Component explanations with code references
+    3. Code examples from the actual codebase
+    4. API documentation for verified APIs only
+    5. Links to existing code files
+    6. Setup instructions verified against the code
+    7. ASCII art diagrams for visual representations (no images)
+
+qa_review_documentation:
+  description: >
+    Review and validate the draft documentation for "{title}" against the actual codebase at {repo_path}:
+
+    1. Technical Accuracy:
+       - Verify all architectural descriptions match implementation
+       - Validate component relationships and interactions
+       - Cross-reference code examples with tests and actual usage
+       - Ensure API signatures and parameters are current
+       - Confirm ASCII diagrams reflect real data/control flows
+       - Check all file paths and code references exist
+
+    2. Documentation Completeness:
+       - Verify coverage of key components:
+         {components}
+       - Validate prerequisites and setup instructions
+       - Check all documented workflows exist in code
+       - Ensure integration patterns match implementation
+       - Confirm troubleshooting scenarios are accurate
+
+    3. Documentation Quality:
+       - Remove any speculative or unimplemented features
+       - Update examples to match current code patterns
+       - Verify learning progression matches codebase complexity
+       - Ensure ASCII diagrams enhance understanding
+       - Check internal documentation links resolve correctly
+
+    4. Technical Consistency:
+       - Align terminology with codebase conventions
+       - Verify component names match implementation
+       - Validate code style in examples
+       - Ensure version numbers are current
+       - Check for technical accuracy in prerequisites
+
+  expected_output: >
+    A thoroughly validated markdown documentation for {title} that:
+    - Is 100% aligned with the implementation at {repo_path}
+    - Contains only verified code examples and workflows
+    - Uses accurate and current API signatures
+    - Has correct ASCII diagrams representing actual system flows
+    - Includes only existing file paths and components
+    - Maintains consistent technical terminology
+    - Provides accurate setup and integration instructions
+    - Follows a clear learning progression
+
+    The output should be pure markdown without fences or meta-commentary.
