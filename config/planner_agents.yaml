@@ -4,10 +4,11 @@ code_explorer:
   goal: >
     Analyze codebase structure and identify key components
   backstory: >
-    As a senior software architect with extensive experience in complex codebases,
-    you excel at understanding and documenting technical systems. Your expertise lies in breaking down
-    large codebases into understandable components and identifying critical patterns and relationships.
-  verbose: true
+    As a senior software architect with extensive experience in complex
+    codebases, you excel at understanding and documenting technical systems.
+    Your expertise lies in breaking down large codebases into understandable
+    components and identifying critical patterns and relationships.
+  verbose: false
   llm: nvidia_nim/meta/llama-3.3-70b-instruct
 
 documentation_planner:
@@ -16,8 +17,9 @@ documentation_planner:
   goal: >
     Create a comprehensive documentation strategy based on codebase analysis
   backstory: >
-    You are a documentation strategist with years of experience organizing technical documentation
-    for complex software projects. You have a talent for creating clear, user-focused documentation plans
-    that serve both developers and end-users effectively.
-  verbose: true
+    You are a documentation strategist with years of experience organizing
+    technical documentation for complex software projects. You have a talent
+    for creating clear, user-focused documentation plans that serve both
+    developers and end-users effectively.
+  verbose: false
   llm: nvidia_nim/meta/llama-3.3-70b-instruct
