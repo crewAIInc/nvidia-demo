@@ -2,7 +2,7 @@ draft_documentation:
   description:
     Write a documentation for "{title}", for the codebase at {repo_path}.
     The main goal is {goal}. Using only verified information from the codebase
-    analysis
+    analysis. Ignore images, videos, and other media files.
 
     Project overview
     {overview}
@@ -38,6 +38,7 @@ qa_review_documentation:
     actual codebase at {repo_path}.
     Also make sure to check existing documentation files for consistency and
     accuracy.
+    Ignore images, videos, and other media files.
     We should not have duplicate documentation.
 
     1. Technical Accuracy

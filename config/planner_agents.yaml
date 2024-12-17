@@ -8,7 +8,8 @@ code_explorer:
     codebases, you excel at understanding and documenting technical systems.
     Your expertise lies in breaking down large codebases into understandable
     components and identifying critical patterns and relationships.
-  verbose: false
+  verbose: true
+  max_iter: 5
   llm: nvidia_nim/meta/llama-3.3-70b-instruct
 
 documentation_planner:
@@ -21,5 +22,6 @@ documentation_planner:
     technical documentation for complex software projects. You have a talent
     for creating clear, user-focused documentation plans that serve both
     developers and end-users effectively.
-  verbose: false
+  verbose: true
+  max_iter: 5
   llm: nvidia_nim/meta/llama-3.3-70b-instruct
