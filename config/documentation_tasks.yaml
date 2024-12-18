@@ -21,9 +21,9 @@ draft_documentation:
 
   expected_output: >
     A factual Markdown documentation that includes only verified information
-    about {title}
-    that is relevant to the codebase at {repo_path}.
+    about {title} that is relevant to the codebase at {repo_path}.
     Use mermaid art diagrams to visualize component relationships and flows.
+    Don't wrap the documentation in fences or meta-commentary.
 
     The documentation must include this like:
       - Section headers matching actual code structure
@@ -75,5 +75,6 @@ qa_review_documentation:
     - Contains only verified code examples and workflows
     - Has correct mermaid diagrams representing actual system flows
     - Maintains consistent technical terminology
+    - Don't wrap the documentation in fences or meta-commentary.
 
     The output should be pure markdown without fences or meta-commentary.
