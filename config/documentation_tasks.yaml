@@ -19,6 +19,8 @@ draft_documentation:
     Use mermaid art diagrams instead of images to represent flows and
     relationships.
 
+    Ignore Images, Videos, and other media files.
+
   expected_output: >
     A factual Markdown documentation that includes only verified information
     about {title} that is relevant to the codebase at {repo_path}.
@@ -76,5 +78,6 @@ qa_review_documentation:
     - Has correct mermaid diagrams representing actual system flows
     - Maintains consistent technical terminology
     - Don't wrap the documentation in fences or meta-commentary.
+    - Ignore Images, Videos, and other media files.
 
     The output should be pure markdown without fences or meta-commentary.

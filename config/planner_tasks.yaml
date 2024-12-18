@@ -68,6 +68,8 @@ create_documentation_plan:
 
       - Getting started guide
 
+      - Ignore Images, Videos, and other media files
+
     Focus on creating a clear learning path from overview to advanced topics,
     and make sure to include all the important aspects of the codebase.
   expected_output:
