@@ -47,10 +47,7 @@ The system operates in two main stages:
    pip install -r requirements.txt
    ```
 3. Set up your environment variables (see below).
-3. Run the Jupyter notebook or execute the Python scripts directly:
-   ```bash
-   python main.py
-   ```
+3. Run the Jupyter notebook.
 4. Generated documentation will be available in the `docs` directory.
 
 ### Setting up NVIDIA API Key
