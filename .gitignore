@@ -1,1 +1,8 @@
 .env
+assets
+docs/*
+db
+!docs/docs_will_go_here.txt
+workdir/*
+!workdir/repo_will_go_here.txt
+.DS_Store
