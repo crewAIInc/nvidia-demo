@@ -1,6 +1,6 @@
 # Building Code Documentation Agents with CrewAI 🤖
 
-[![Deploy Now](https://uohmivykqgnnbiouffke.supabase.co/storage/v1/object/public/landingpage/brevdeploynavy.svg)](https://console.brev.dev/launchable/deploy?launchableID=env-2qNXgLMuzlJ8LS8Kl30EXbGwxSh)
+[![Deploy Now](https://brev-assets.s3.us-west-1.amazonaws.com/nv-lb-dark.svg)](https://console.brev.dev/launchable/deploy?launchableID=env-2qNXgLMuzlJ8LS8Kl30EXbGwxSh)
 
 A powerful system that leverages CrewAI Flows to automatically generate comprehensive documentation for any public GitHub repository. This project employs multiple specialized AI agents working collaboratively to produce high-quality, accurate documentation tailored to your codebase.
 
@@ -18,18 +18,20 @@ A powerful system that leverages CrewAI Flows to automatically generate comprehe
 
 ## Architecture
 
-The system operates in two main stages:
+**The system employs a multi-agent workflow divided into two key stages:**
 
-1. **Codebase Analysis and Strategy Planning**
-   - Maps the repository structure.
-   - Identifies key components.
-   - Develops a documentation strategy.
+#### Ingestion Phase
+- **WebsiteSearchTool:** This tool is used to embed and index mermaid examples from mermaid.js.org website using NVIDIA NeMo Retriever E5 embedding NIM.
 
-2. **Documentation Creation and Review**
-   - Generates high-level and detailed documentation.
-   - Verifies technical accuracy.
-   - Checks for consistency and completeness.
-
+#### Agent Flow
+1. Codebase Analysis and Strategy Planning:
+    - Analyze Codebase: Planner agents inspect the repository to map its structure, identify key components, and understand interdependencies.
+    - Develop Strategy: They create a tailored documentation plan based on the analysis.
+2. Documentation Creation and Review:
+    - High-Level Documentation: One agent generates clear, comprehensive documentation introducing the project and its architecture.
+    - Quality Assurance: Another agent ensures accuracy, consistency, and completeness across all documentation.
+Here's an architecture diagram of the workflow:
+![arch diagram](./arch_diagram.png)
 ---
 
 ## Getting Started
@@ -57,11 +59,11 @@ The system operates in two main stages:
 3. Retrieve your API key from the right panel.
 4. Set your environment variables:
    ```bash
-   export NIM_API_KEY=your_api_key
+   export NVIDIA_NIM_API_KEY=your_api_key
    ```
    Alternatively, create a `.env` file in the project root:
    ```bash
-   NIM_API_KEY=your_api_key
+   NVIDIA_NIM_API_KEY=your_api_key
    ```
 
 ---
