@@ -31,7 +31,8 @@ A powerful system that leverages CrewAI Flows to automatically generate comprehe
     - High-Level Documentation: One agent generates clear, comprehensive documentation introducing the project and its architecture.
     - Quality Assurance: Another agent ensures accuracy, consistency, and completeness across all documentation.
 Here's an architecture diagram of the workflow:
-![arch diagram](./arch_diagram.png)
+![Architecture Diagram](https://raw.githubusercontent.com/crewAIInc/nvidia-demo/main/arch_diagram.png)
+
 ---
 
 ## Getting Started
