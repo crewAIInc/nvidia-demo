@@ -66,7 +66,6 @@ qa_review_documentation:
        - Validate code style in examples
 
     5. Diagram Validation
-       - Check Mermaid examples
        - Verify mermaid diagram syntax is correct using the tool
        - Ensure graph relationships use proper arrow syntax (no trailing > after pipe decorator)
        - Validate that all diagram components exist in codebase
