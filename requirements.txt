@@ -1,4 +1,4 @@
 crewai==0.95.0
 tqdm==4.67.1
 crewai-tools==0.25.8
-langchain_nvidia_ai_endpoints
+langchain_nvidia_ai_endpoints==0.3.7
