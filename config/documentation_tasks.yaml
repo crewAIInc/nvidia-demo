@@ -1,47 +1,65 @@
 draft_documentation:
   description:
-    Write a documentation for "{title}", for the codebase at {repo_path}.
-    The main goal is {goal}. Using only verified information from the codebase
-    analysis. Ignore images, videos, and other media files.
+   Write the section "{section}" of the documentation for "{title}", for the codebase at {repo_path}.
+   The main goal is {goal}. Using only verified information from the codebase
+   analysis. Ignore images, videos, and other media files.
 
-    Project overview
-    {overview}
+   Description of the project
 
-    High level documentation description for {title}
-    {description}
+   {project_overview}
 
-    Prerequisites
-    {prerequisites}
 
-    Examples
-    {examples}
+   Project Organization
 
-    Use mermaid art diagrams instead of images to represent flows and
-    relationships.
+   {project_organization}
 
-    Ignore Images, Videos, and other media files.
+
+   Additional information
+
+   {additional_information}
+
+
+   High level documentation description for {title}
+   {description}
+
+
+   Prerequisites
+   {prerequisites}
+
+
+   Associated entities
+   {associated_entities}
+
+
+   Examples
+   {examples}
+
+
+   Documentation so far
+   {documentation}
+
+
+
+   Ignore Images, Videos, and other media files.
 
   expected_output: >
-    A factual Markdown documentation that includes only verified information
-    about {title} that is relevant to the codebase at {repo_path}.
-    Use mermaid art diagrams to visualize component relationships and flows.
+    A factual Markdown section of the documentation that includes only
+    verified information about "{section}" of "{title}".
+
     Don't wrap the documentation in fences or meta-commentary.
 
-    The documentation must include this like:
-      - Section headers matching actual code structure
+    The documentation section must include things like (if applicable):
       - Thoughtful explanations with code references
       - Code examples from the actual codebase
       - Setup instructions verified against the code
-      - mermaid art diagrams for visual representations (no images)
 
 qa_review_documentation:
   description:
-    Review and validate the draft documentation for "{title}" against the
-    actual codebase at {repo_path}.
+    Review and validate the draft documentation section "{section}" for "{title}"
+    against the actual codebase at {repo_path}.
     Also make sure to check existing documentation files for consistency and
     accuracy.
     Ignore images, videos, and other media files.
-    We should not have duplicate documentation.
 
     1. Technical Accuracy
        - Verify all architectural descriptions match implementation
@@ -70,12 +88,13 @@ qa_review_documentation:
        - Check that flow directions accurately represent system behavior
        - Mermaid blocks should be wrapped in ```mermaid```
   expected_output: >
-    A thoroughly validated markdown documentation for {title} that:
-    - Is 100% aligned with the implementation at {repo_path}
-    - Contains only verified code examples and workflows
-    - Has correct mermaid diagrams representing actual system flows
-    - Maintains consistent technical terminology
-    - Don't wrap the documentation in fences or meta-commentary.
-    - Ignore Images, Videos, and other media files.
+    A thoroughly validated markdown documentation section for "{section}" of
+    "{title}" that (if applicable):
+      - Is 100% aligned with the implementation at {repo_path}
+      - Contains only verified code examples and workflows
+      - Has correct mermaid diagrams representing actual system flows
+      - Maintains consistent technical terminology
+      - Don't wrap the documentation in fences or meta-commentary.
+      - Ignore Images, Videos, and other media files.
 
     The output should be pure markdown without fences or meta-commentary.

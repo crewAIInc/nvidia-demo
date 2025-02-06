@@ -3,6 +3,28 @@ analyze_codebase:
     Analyze the codebase at {repo_path} to create a developer-focused
     technical overview
 
+
+    Description of the project
+
+    {project_overview}
+
+
+    Project Organization
+
+    {project_organization}
+
+
+    Additional information
+
+    {additional_information}
+
+
+    Components
+
+    {components_names}
+
+
+
     1. Map out the core architecture and components
 
     2. Identify key classes, functions and their interactions
@@ -23,27 +45,40 @@ analyze_codebase:
   expected_output:
     A technical analysis containing
 
-      - What is the project about, what is it meant to do
+      - Deeply explanation of the architecture
 
-      - Project overview, deeply explaining the architecture and design
+      - The overall design of the project
 
-      - Deep documentation of the codebase, with
+      - All different layers of the project
 
-        - Method signatures and parameters
-
-        - Usage examples and common patterns, using code examples
-
-        - Integration guidelines
-
-        - Explanation of each section
-
-      - Component interaction diagrams
+      - Common patterns
 
       - Implementation patterns and their use cases
 
 create_documentation_plan:
   description:
     Develop engineering-focused documentation plan for {repo_path}
+
+
+    Description of the project
+
+    {project_overview}
+
+
+    Project Organization
+
+    {project_organization}
+
+
+    Additional information
+
+    {additional_information}
+
+
+    Components
+
+    {components_names}
+
 
     The plan should be a list of separate documents, that will be written,
     and should be ordered by importance and complexity.
@@ -56,11 +91,13 @@ create_documentation_plan:
     prerequisites, practical examples using code that are clear and comprehensive
     goal.
 
-    Make sure the plan also covers things like
-
-      - A comprehensive overview
+    Make sure the plan also covers things like (if applicable)
 
       - System architecture and key design decisions
+
+      - Request parameter expectation
+
+      - Response structures
 
       - Core workflows and data flows
 
@@ -70,8 +107,22 @@ create_documentation_plan:
 
       - Ignore Images, Videos, and other media files
 
+
     Focus on creating a clear learning path from overview to advanced topics,
     and make sure to include all the important aspects of the codebase.
   expected_output:
-    A documentation plan with a list of documents, ordered by importance and
-    complexity.
+    A documentation plan with a list of documents,
+    ordered by importance and complexity.
+
+    Each document should have a thoughtful title, long meaningful description,
+    prerequisites, practical examples using code that are clear and comprehensive
+    goal.
+
+    Most importantly, each document should have a list of sections that are
+    well defined and cover all the important aspects of the codebase.
+
+    Including things like Request parameter expectation, Response structures,
+    Core workflows and data flows, component interactions.
+
+    Create as many documents as necessary to cover as much of the codebase as
+    possible.

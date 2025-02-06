@@ -1,0 +1,46 @@
+understand_application:
+  description:
+    Fully explore and understand the following project and its components.
+
+    Project path is {repo_path}
+
+    Your main goal is to understand how the project is organized and what are
+    its main components.
+
+    Ignore the fact this is a git repository.
+    You must explore the project and it's code.
+    Make sure to read the code.
+
+  expected_output: >
+    A report with the following information:
+
+    - Project overview
+    - How the project is organized
+    - What are the main components
+    - Relevant files and directories
+    - Any other relevant information
+
+map_components:
+  description:
+    Given your understanding of the project, map the main components and
+    their relationships.
+
+    You now want to do a deep dive into each component and understand its
+    main functionality, and how it integrates with the rest of the project.
+
+    Project path is {repo_path}
+
+    Ignore the fact this is a git repository.
+    You must explore the project and it's code.
+    Make sure to read the code.
+
+  expected_output: >
+    A report with the following information:
+
+    - A list of all the components
+      - A description of each component
+      - A list of files and directories relevant to that component
+      - What is the main functionality of the component
+      - How it integrates with the rest of the project
+      - Any other relevant information
+
